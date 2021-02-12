@@ -1,9 +1,5 @@
 
 $(document).ready(function () {
-
-    const num = 0;
-
-
     var formulario = $('#folrmularioContacto');
     var nombre = $('#nombreFor');
     var email = $('#emailFor');
@@ -17,10 +13,8 @@ $(document).ready(function () {
         if (nombre.val() == '' || nombre.val() == null) {
             e.preventDefault();
             $('input[type="text"] + .error').css('display', 'block');
-            num = 1
         } else {
             $('input[type="text"] + .error').css('display', 'none');
-            num = 1;
         }
         
     }
@@ -58,7 +52,6 @@ $(document).ready(function () {
     }
     
     formulario.on('submit', validacion)
-    console.log(num);
 
 })
 

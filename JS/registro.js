@@ -1,4 +1,4 @@
-var url = 'http://yomedium.herokuapp.com/usuarios';
+var url = 'https://yomedium.herokuapp.com/usuarios';
 var users = [];
 
 $(window).on("load",  async () => {
@@ -30,7 +30,7 @@ $(window).on("load",  async () => {
                 password: $('#passNew').val()
             }
 
-           await axios.post('http://yomedium.herokuapp.com/usuarios', newUser).then((response) => {
+           await axios.post('https://yomedium.herokuapp.com/usuarios', newUser).then((response) => {
                console.log(response.data)
             });
 

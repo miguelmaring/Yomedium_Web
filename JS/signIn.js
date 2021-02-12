@@ -1,4 +1,4 @@
-var url = 'http://yomedium.herokuapp.com/usuarios';
+var url = 'https://yomedium.herokuapp.com/usuarios';
 var users = [];
 
 $(window).on("load",  async () => {
