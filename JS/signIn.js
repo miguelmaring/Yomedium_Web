@@ -6,7 +6,7 @@ $(window).on("load",  async () => {
         users = (await axios.get(`${url}`));
 		console.log(users)
     } catch (error) {
-        console.log(err)
+        console.log(error)
     }
 
     $('#signIn').on("click", function() {
@@ -31,9 +31,10 @@ $(window).on("load",  async () => {
 		} else {
 			alert('Hola!! vemos que no eres usuario, si lo deseas puedes registrarte rellenando nuestro formulario de alta')
 		}
-		/*window.location.href = 'index.html';*/
 
     });
+
+
 
     
 });

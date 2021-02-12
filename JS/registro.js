@@ -6,7 +6,7 @@ $(window).on("load",  async () => {
         users = (await axios.get(`${url}`));
 		console.log(users)
     } catch (error) {
-        console.log(err)
+        console.log(error)
     }
 
     $('#formularioNew').on("submit", async(event) => {
