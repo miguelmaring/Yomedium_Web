@@ -1,0 +1,129 @@
+
+
+body{
+    background-image: url(../Imagenes/forest_path_autumn_132571_2560x1080muybonito.jpg);
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    margin: 0px auto;
+    height: 100vh;
+    font-family: 'Hachi Maru Pop', cursive;
+    font-size: 16px;
+}
+.cabecera{
+    font-size: 5rem;
+    color: white;
+}
+
+.social{
+    border-radius: 20px;
+}
+
+.form-control{
+    background: transparent;
+    color: gray;
+}
+
+.form-outline{
+    border: -2;
+    border-color: grey;
+    color: white;
+}
+
+.cajones{
+    background-color: rgba(0,0,0,0.55);
+    border-radius: 10px;
+    border-style: solid;
+    border-color:#d2d2d2;
+    max-width: 375px;
+    box-shadow:0 1px 0 #cfcfcf;
+    border-width: 5px;
+}
+
+.cabecera_cajones{
+    font-size: large;
+    color: white;
+}
+
+.cajones_centrales{
+    padding: 10px;
+}
+
+.errorNew{
+    display: none;
+    font-size: 0.7rem;
+    color: red
+}
+
+.errorUser{
+    display: none;
+    font-size: 0.7rem;
+    color: red
+}
+
+.btn{
+    width: 100%;
+    background: #0089E0;
+    color: #fff;
+    transition: all .7s ease;
+
+}
+
+.btn:hover{
+    background: #fff;
+    color: #0089E0;
+}
+
+.contenedor-modal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  
+.contenedor-modal button {
+    position: relative;
+    top: 40%;
+}
+
+
+.volver{
+    display: flex;
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:1000px){
+
+    .container{
+        height: 100%;
+        display: block;
+    }
+
+    .btn-return{
+        display: none;
+ 
+    }
+
+    .cabecera{
+        font-size: 2rem;
+    }
+    .cajones_centrales{
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;;
+        text-align: center;
+        height: 100%
+    }
+
+    .cajones{
+        margin-top: 20px;
+    }
+}

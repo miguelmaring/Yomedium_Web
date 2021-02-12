@@ -1,0 +1,428 @@
+/* ----- GENERALES ------ */
+
+
+.contenedor_general{
+
+    padding: 80px;
+    
+}
+
+.contenedor_general .textos{    
+    background-color: rgba(0,0,0,0.55);
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgba(139, 140, 122, 0.479);
+    border-width: 5px;
+    padding: 20px  !important;
+    font-size: (1em + 1 vh);
+    font-family: 'Hachi Maru Pop', cursive;
+  
+}
+
+
+
+.navbarPrincipal{
+    border-bottom: 2px solid  rgba(139, 140, 122, 0.479);
+
+}
+
+.cabecera{
+    height: 500px;
+    width: 100%;
+}
+
+
+.infologin{
+    margin-left: 15px;
+}
+
+.registro{
+    margin-left: 20px;
+}
+
+.redes{
+    margin-right: 10px;;
+}
+
+
+.fas{
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+.btn-volver-arriba{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 30%;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 100;
+    margin-right: -60px;
+    transition: all .4s ease;
+}
+
+.btn-volver-arriba a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 30%;
+    text-align: center;
+}
+
+.btn-volver-arriba a i{
+    font-size: 1rem;
+    color: #fff;
+    line-height: 40px;
+}
+
+
+.list-unstyled a i:hover{   
+    color:  rgba(139, 140, 122, 0.479);
+
+}
+
+.btnRedes a i:hover{
+    color:  rgba(139, 140, 122, 0.479);
+}
+
+.contenedor-principal{
+    display:flex
+}
+
+/* ---------- INDEX ----------- */
+
+.texto_pres{
+    display: flex;
+    font-size: (1em + 1 vh);
+    text-align: center;
+    align-items: center;
+    font-family: 'Hachi Maru Pop', cursive;
+}
+
+
+/* ---------- MEDIUM ----------- */
+
+
+.texto_med{
+    font-size: (1em + 1 vh);
+    font-family: 'Hachi Maru Pop', cursive;
+    margin-top: 20px;
+    background-color: rgba(0,0,0,0.55);
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgba(139, 140, 122, 0.479);
+    border-width: 5px;
+    margin-bottom: 10px;
+    padding: 15px;;
+    margin-right: 10px;
+}
+
+.texto_med p{
+    margin-left: 10px;
+    height: 100%;
+    padding: 2px;
+
+}
+
+
+.foto_med{
+    align-content: center;
+}
+
+.med{
+    height: 700px;
+}
+/* ---------- VIDENCIA ----------- */
+/* ---------- REGISTROS ----------- */
+/* ---------- VIDAS PASADAS ----------- */
+/* ---------- REIKI ----------- */
+/* ---------- TAROT ----------- */
+/* ---------- TALLERES ----------- */
+
+.taller{
+    background-color: rgba(0,0,0,0.55);
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgba(139, 140, 122, 0.479);
+    width: 100%;
+    border-width: 5px;
+    box-shadow: 0px 20px 40px rgba(139, 140, 122, 0.479);
+}
+
+.formularioT {
+    width: 50%;
+}
+
+.contenedor-formulario .taller .container .row .col .table{
+    color: white;
+}
+
+.cuadro-mes{
+    width: 100% !important;
+}
+
+.texto-taller p{
+    font-family: 'Hachi Maru Pop', cursive;
+    font-size: 40px;
+    margin-top: 40px;
+}
+.texto-taller-2 p{
+    font-family: 'Hachi Maru Pop', cursive;
+    font-size: 30px;
+    margin-top: 40px;
+}
+.imagTaller img{
+    width: 100%;
+}
+
+/* ---------- CURSO ----------- */
+
+
+/* ---------- MEDITACION ----------- */
+
+
+/* ---------- BLOG ----------- */
+
+.blog{
+    margin-top: 10px;
+}
+
+.post{
+    height: 50%;            
+    width: 60%;
+    background-color:  rgba(139, 140, 122, 0.479);
+}
+
+
+
+/* ---------- CONTACTO ----------- */
+
+
+
+.contenedor-formulario{
+    display: flex;
+    align-items: center;
+
+    width: 1200px;
+}
+
+.formulario{
+    width: 50%;
+    margin-left: 30px;    
+}
+
+.formulario-contacto-imagen{
+    width: 50%;
+}
+
+.infoPersonal{
+    margin-top: 5px;
+
+}
+.infoPersonal h5{
+    width: 70%;
+    margin-bottom: 20px;
+
+
+}
+.formularioContacto{
+    height: 50%;
+}
+
+
+.fa-envelope{
+    margin-right: 5px;
+}
+
+.contactoCuadro{
+    width: 70%;
+    height: 40px;
+
+}
+
+.img logo{
+    height: 600px;
+    width: 600px;
+}
+
+.recuadro{
+    height: 100px;
+}
+
+
+.cont-mensaje{
+    height: 100%;
+    width: 70%;
+}
+
+form .error{
+    display: none;
+    color: red;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom:  10px;
+}
+
+.btnFormulario{
+    width: 30%;
+}
+
+
+
+
+
+/* ----------- MEDIA QUERYS -------------- */
+
+
+@media screen and (min-width: 800px) and (max-width: 1250px){
+    .med{
+        height: 800px;
+    }
+    .fotoLogo{
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .fotoMed{
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .formularioT {
+        width: 80%;
+    }
+
+
+    .texto-taller p{
+        font-size: 28px;
+    }
+
+    .texto-taller-2 p{
+        font-size: 20px;
+    }
+
+}
+ 
+
+@media screen and (max-width: 800px){
+ 
+
+    .med{
+        height: 300px;
+    }
+
+    .texto_med{
+
+        margin-left: 11px;;
+    }
+    .fotoMed{
+        width: 300px ;
+        padding: 0;
+    }
+
+    .contenedor-principal .contenedor-principal-logo img{
+        height: 300px;
+        width: 300px;;
+    }
+
+    .contenedor-principal{
+        display: inline-flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+    .contenedor-principal-logo{
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        margin: 0;
+    }
+    .contenedor-principalTexto{
+        width: 90%;
+        justify-content: center;
+    }
+
+    footer .container .footerRedes{
+        display: none;
+    }
+    
+
+    .cabecera{
+        height: 250px;
+    }
+    
+    .formulario{
+        width: 100%;
+    }
+
+    .infoPersonal h5{
+        font-size: 18px;
+        width: 100%;
+    }
+    .formulario-contacto-imagen{
+        display: none;
+    }
+
+    .contactoCuadro{
+        width: 100%;
+    }
+
+    .cont-mensaje{
+        width: 100%;
+    }
+
+    .imagVid img{
+        width: 1000% !important;
+    }
+    
+    .textos{
+        width: 90%;
+    }
+    
+    .post{
+        width: 90% !important;
+        background-color:  rgba(139, 140, 122, 0.479);
+    }
+
+    .contenedor_general{
+        padding: 25px;;
+    }
+  
+    .contenedor_general .textos{
+        width: 100% !important;
+    }
+
+    .navbar-toggler{
+        background-color: azure !important;
+    }  
+    
+    .texto-taller p{
+        font-size: 20px;
+    }
+
+    .texto-taller-2 p{
+        font-size: 17px;
+    }
+    
+    .medari-mes .formulario{
+        width: 90%;
+    }
+
+    .formularioT {
+        width: 80%;
+    }
+}

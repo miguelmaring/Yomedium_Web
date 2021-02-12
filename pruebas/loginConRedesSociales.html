@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Open+Sans&family=Oswald&family=Raleway&family=Roboto&display=swap" rel="stylesheet">          
+        <link rel="stylesheet" type="text/css" href="./CSS/login_copy.css" />
+        <script src="yo_medium.js"></script> 
+
+        <title>Yo Medium - Registros Akashicos</title>
+    </head>
+<body>
+    <div class="container">
+        <div class="d-flex p-2 bd-highlight justify-content-center cabecera">Yo Médium</div>
+        <div class="d-flex justify-content-around cajones_centrales">
+            <div class="p-2 bd-highlight border border-4 cajones shadow">
+                <form action="" onsubmit='return signIn()'id="formularioExist">
+                  <div class="alert alert-danger alerta" >LALALALA</div>
+                    <!-- Email input -->
+                    <div class="text-center cabecera_cajones m-2">¿Ya eres usuario?</div>
+                    <div class="form-outline mb-4 ">
+                      <input type="email" id="emailExist" class="form-control" placeholder="E-mail"/>
+                      <label class="form-label" for="emailExist">Dirección e-mail</label>
+                    </div>
+                  
+                    <!-- Password input -->
+                    <div class="form-outline mb-4">
+                      <input type="password" id="passExist" class="form-control" placeholder="Password" />
+                      <label class="form-label" for="passExist">Password</label>
+                    </div>
+
+                  
+                    <!-- 2 column grid layout for inline styling -->
+                    <div class="row mb-4">
+                      <div class="col d-flex justify-content-center">
+                        <!-- Checkbox -->
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="form1Example3"
+                            checked
+                          />
+                          <label class="form-check-label text-white" for="recuerdame"> Recuérdame </label>
+                        </div>
+                      </div>
+                  
+                      <div class="col">
+                        <!-- Simple link -->
+                        <a href="#!">¿Olvidastes la contraseña?</a>
+                      </div>
+                    </div>
+                  
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                  </form>
+                  <div id='error'></div>
+
+            </div>
+
+
+
+            <div class="p-2 bd-highlight  cajones shadow">
+                <form action="" onsubmit='return enviarFormulario()'id="formularioNew">
+                    <!-- 2 column grid layout with text inputs for the first and last names -->
+                    <div class="text-center cabecera_cajones m-2">Date de alta:</div>
+
+                    <div class="row mb-4">
+                      <div class="col">
+                        <div class="form-outline">
+                          <input type="text" id="nombreNew" class="form-control" placeholder="Ángela"/>
+                          <label class="form-label" for="nombreNew">Nombre</label>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-outline">
+                          <input type="text" id="apellidoNew" class="form-control" placeholder="Vazi"/>
+                          <label class="form-label" for="apellidoNew">Apellido</label>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                      <input type="email" id="emailNew" class="form-control" placeholder="E-mail" />
+                      <label class="form-label" for="emailNew">Dirección e-mail</label>
+                    </div>
+                  
+                    <!-- Password input -->
+                    <div class="form-outline mb-4">
+                      <input type="password" id="passNew" class="form-control" placeholder="Password"/>
+                      <label class="form-label" for="passNew">Password</label>
+                    </div>
+                  
+                    <!-- Checkbox -->
+                    <div class="form-check d-flex justify-content-center mb-4">
+                      <input
+                        class="form-check-input me-2"
+                        type="checkbox"
+                        value=""
+                        id="form2Example3"
+                        checked
+                      />
+                      <label class="form-check-label text-white" for="newsletter"  >
+                        Subscribirse a nuestra newsletter
+                      </label>
+                    </div>
+                  
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary btn-block mb-4">Registrarse</button>
+                  
+                    <!-- Register buttons -->
+                    <div class="text-center">
+                      <p class="text-white" >or sign up with:</p>
+                      <button type="button" class="btn btn-primary btn-floating mx-1 social">
+                        <i class="fab fa-facebook-f"></i>
+                      </button>
+                  
+                      <button type="button" class="btn btn-primary btn-floating mx-1 social">
+                        <i class="fab fa-google"></i>
+                      </button>
+                  
+                      <button type="button" class="btn btn-primary btn-floating mx-1 social">
+                        <i class="fab fa-twitter"></i>
+                      </button>
+                
+                    </div>
+                  </form>
+                  <div id='error'></div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <script src="yo_medium.js"></script> 
+
+</body>
+</html>  
