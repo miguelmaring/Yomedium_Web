@@ -1,4 +1,4 @@
-var url = 'http://localhost:3000/usuarios';
+var url = 'http://yomedium.herokuapp.com/usuarios';
 var users = [];
 
 $(window).on("load",  async () => {
@@ -9,7 +9,9 @@ $(window).on("load",  async () => {
         console.log(err)
     }
 
-    $('#registro').on("click", async () => {
+    $('#formularioNew').on("submit", async(event) => {
+        event.preventDefault();
+        console.log
 		let isUser = false;
         for (var i = 0; i < users.data.length; i++){
 			if ($('#emailNew').val() == users.data[i].email){
@@ -18,7 +20,7 @@ $(window).on("load",  async () => {
                 break;
 			}
 		}
-        if (isUser == false){
+        if (isUser === false){
 
             let newUser = {
                 id: ++users.data.length,
@@ -28,7 +30,8 @@ $(window).on("load",  async () => {
                 password: $('#passNew').val()
             }
 
-            axios.post('http://localhost:3000/usuarios', newUser).then((response) => {
+           await axios.post('http://yomedium.herokuapp.com/usuarios', newUser).then((response) => {
+               console.log(response.data)
             });
 
             alert('Hola ' + $('#nombreNew').val() + ' le hemos mandado un mail para finalizar el proceso de alta.');
