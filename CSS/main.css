@@ -159,6 +159,11 @@
     background-color: #E6D690 !important;
 }
 
+
+.navbar-toggler{
+    background-color:#E6D690 !important;
+}  
+
 /* ---------- INDEX ----------- */
 
 .texto_pres {
@@ -516,8 +521,13 @@ form .error {
         width: 100% !important;
     }
 
+<<<<<<< HEAD
 
     .texto-taller p {
+=======
+    
+    .texto-taller p{
+>>>>>>> bd1f00422cfb2364e75e09e77dc06ba4566256a4
         font-size: 20px;
     }
 

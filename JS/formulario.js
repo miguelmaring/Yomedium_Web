@@ -14,11 +14,16 @@ $(document).ready(function () {
         if (nombre.val() == '' || nombre.val() == null) {
             e.preventDefault();
             $('input[type="text"] + .error').css('display', 'block');
+<<<<<<< HEAD
             prueba = true;
 
         } else {
             $('input[type="text"] + .error').css('display', 'none');
             prueba = true;
+=======
+        } else {
+            $('input[type="text"] + .error').css('display', 'none');
+>>>>>>> bd1f00422cfb2364e75e09e77dc06ba4566256a4
         }
         
     }
