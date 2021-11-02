@@ -1,13 +1,10 @@
 
 $(document).ready(function () {
-
-    const num = 0;
-
-
     var formulario = $('#folrmularioContacto');
     var nombre = $('#nombreFor');
     var email = $('#emailFor');
     var mensaje = $('#mensajeFor');
+    var prueba = false;
 
 
  
@@ -17,10 +14,11 @@ $(document).ready(function () {
         if (nombre.val() == '' || nombre.val() == null) {
             e.preventDefault();
             $('input[type="text"] + .error').css('display', 'block');
-            num = 1
+            prueba = true;
+
         } else {
             $('input[type="text"] + .error').css('display', 'none');
-            num = 1;
+            prueba = true;
         }
         
     }
@@ -56,10 +54,12 @@ $(document).ready(function () {
         valMensaje(e);
        
     }
+
     
     formulario.on('submit', validacion)
-    console.log(num);
 
 })
+
+
 
 

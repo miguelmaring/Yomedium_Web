@@ -1,61 +1,112 @@
 /* ----- GENERALES ------ */
 
-
-.contenedor_general{
-
-    padding: 80px;
-    
+.imagen_sticky {
+    position: sticky;
+    top: 56px;
+    height: fit-content;
+    display: flex;
+    width: 100%;
 }
 
-.contenedor_general .textos{    
-    background-color: rgba(0,0,0,0.55);
+.parte-blog {
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+.seccion-blog {
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.55);
     border-radius: 10px;
     border-style: solid;
     border-color: rgba(139, 140, 122, 0.479);
     border-width: 5px;
-    padding: 20px  !important;
+    padding: 20px !important;
     font-size: (1em + 1 vh);
     font-family: 'Hachi Maru Pop', cursive;
-  
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 0.3fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        ". . .";
+}
+
+.contenedor_blog {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+    ;
+}
+
+.contenedor_general {
+
+    padding: 80px;
+
+}
+
+.card-title {
+    font-size: 2rem;
+}
+
+.news {
+    position: sticky;
+    top: 80px;
+    height: fit-content;
+}
+
+.newsletter {
+    margin-right: 15px;
+    font-size: 1.5rem;
+}
+
+.contenedor_general .textos {
+    background-color: rgba(0, 0, 0, 0.55);
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgba(139, 140, 122, 0.479);
+    border-width: 5px;
+    padding: 20px !important;
+    font-size: (1em + 1 vh);
+    font-family: 'Hachi Maru Pop', cursive;
+
 }
 
 
 
-.navbarPrincipal{
-    border-bottom: 2px solid  rgba(139, 140, 122, 0.479);
+.navbarPrincipal {
+    border-bottom: 2px solid rgba(139, 140, 122, 0.479);
 
 }
 
-.cabecera{
+.cabecera {
     height: 500px;
     width: 100%;
 }
 
 
-.infologin{
+.infologin {
     margin-left: 15px;
 }
 
-.registro{
+.registro {
     margin-left: 20px;
 }
 
-.redes{
-    margin-right: 10px;;
-}
-
-
-.fas{
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
+.redes {
+    margin-right: 10px;
+    ;
 }
 
 
 
-.btn-volver-arriba{
+
+
+.btn-volver-arriba {
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -69,7 +120,7 @@
     transition: all .4s ease;
 }
 
-.btn-volver-arriba a{
+.btn-volver-arriba a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,29 +130,38 @@
     text-align: center;
 }
 
-.btn-volver-arriba a i{
+.btn-volver-arriba a i {
     font-size: 1rem;
     color: #fff;
     line-height: 40px;
 }
 
 
-.list-unstyled a i:hover{   
-    color:  rgba(139, 140, 122, 0.479);
+.list-unstyled a i:hover {
+    color: rgba(139, 140, 122, 0.479);
 
 }
 
-.btnRedes a i:hover{
-    color:  rgba(139, 140, 122, 0.479);
+.btnRedes a i:hover {
+    color: rgba(139, 140, 122, 0.479);
 }
 
-.contenedor-principal{
-    display:flex
+.btn-barra a:hover {
+    color: rgba(139, 140, 122, 0.479);
+}
+
+.contenedor-principal {
+    display: flex
+}
+
+
+.navbar-toggler {
+    background-color: #E6D690 !important;
 }
 
 /* ---------- INDEX ----------- */
 
-.texto_pres{
+.texto_pres {
     display: flex;
     font-size: (1em + 1 vh);
     text-align: center;
@@ -113,21 +173,22 @@
 /* ---------- MEDIUM ----------- */
 
 
-.texto_med{
+.texto_med {
     font-size: (1em + 1 vh);
     font-family: 'Hachi Maru Pop', cursive;
     margin-top: 20px;
-    background-color: rgba(0,0,0,0.55);
+    background-color: rgba(0, 0, 0, 0.55);
     border-radius: 10px;
     border-style: solid;
     border-color: rgba(139, 140, 122, 0.479);
     border-width: 5px;
     margin-bottom: 10px;
-    padding: 15px;;
+    padding: 15px;
+    ;
     margin-right: 10px;
 }
 
-.texto_med p{
+.texto_med p {
     margin-left: 10px;
     height: 100%;
     padding: 2px;
@@ -135,13 +196,14 @@
 }
 
 
-.foto_med{
+.foto_med {
     align-content: center;
 }
 
-.med{
+.med {
     height: 700px;
 }
+
 /* ---------- VIDENCIA ----------- */
 /* ---------- REGISTROS ----------- */
 /* ---------- VIDAS PASADAS ----------- */
@@ -149,8 +211,8 @@
 /* ---------- TAROT ----------- */
 /* ---------- TALLERES ----------- */
 
-.taller{
-    background-color: rgba(0,0,0,0.55);
+.taller {
+    background-color: rgba(0, 0, 0, 0.55);
     border-radius: 10px;
     border-style: solid;
     border-color: rgba(139, 140, 122, 0.479);
@@ -163,25 +225,27 @@
     width: 50%;
 }
 
-.contenedor-formulario .taller .container .row .col .table{
+.contenedor-formulario .taller .container .row .col .table {
     color: white;
 }
 
-.cuadro-mes{
+.cuadro-mes {
     width: 100% !important;
 }
 
-.texto-taller p{
+.texto-taller p {
     font-family: 'Hachi Maru Pop', cursive;
     font-size: 40px;
     margin-top: 40px;
 }
-.texto-taller-2 p{
+
+.texto-taller-2 p {
     font-family: 'Hachi Maru Pop', cursive;
     font-size: 30px;
     margin-top: 40px;
 }
-.imagTaller img{
+
+.imagTaller img {
     width: 100%;
 }
 
@@ -193,87 +257,93 @@
 
 /* ---------- BLOG ----------- */
 
-.blog{
+.blog {
     margin-top: 10px;
 }
 
-.post{
-    height: 50%;            
-    width: 60%;
-    background-color:  rgba(139, 140, 122, 0.479);
+.post {
+    /* height: 50%;             */
+    /* width: 60%; */
+    width: 90%;
+    background-color: rgba(139, 140, 122, 0.479);
+    margin: auto;
 }
 
-
+.imagen_empezar {
+    border-radius: 100% !important
+}
 
 /* ---------- CONTACTO ----------- */
 
 
 
-.contenedor-formulario{
+.contenedor-formulario {
     display: flex;
     align-items: center;
 
     width: 1200px;
 }
 
-.formulario{
+.formulario {
     width: 50%;
-    margin-left: 30px;    
+    margin-left: 30px;
 }
 
-.formulario-contacto-imagen{
+.formulario-contacto-imagen {
     width: 50%;
 }
 
-.infoPersonal{
+.infoPersonal {
     margin-top: 5px;
 
 }
-.infoPersonal h5{
+
+.infoPersonal h5 {
     width: 70%;
     margin-bottom: 20px;
 
 
 }
-.formularioContacto{
+
+.formularioContacto {
     height: 50%;
 }
 
 
-.fa-envelope{
+.fa-envelope {
     margin-right: 5px;
 }
 
-.contactoCuadro{
+.contactoCuadro {
     width: 70%;
     height: 40px;
 
 }
 
-.img logo{
+.img logo {
     height: 600px;
     width: 600px;
 }
 
-.recuadro{
+.recuadro {
     height: 100px;
 }
 
 
-.cont-mensaje{
+.cont-mensaje {
     height: 100%;
     width: 70%;
 }
 
-form .error{
+form .error {
     display: none;
     color: red;
     font-size: 12px;
     margin-top: 10px;
-    margin-bottom:  10px;
+    margin-bottom: 10px;
 }
 
-.btnFormulario{
+.btnFormulario {
     width: 30%;
 }
 
@@ -284,17 +354,34 @@ form .error{
 /* ----------- MEDIA QUERYS -------------- */
 
 
-@media screen and (min-width: 800px) and (max-width: 1250px){
-    .med{
+@media screen and (min-width: 800px) and (max-width: 1250px) {
+
+    .imagen_blog {
+        display: none;
+    }
+
+    .grid-container {
+        display: flex;
+    }
+
+    .news {
+        position: sticky;
+        top: 80px;
+        height: fit-content;
+    }
+
+    .med {
         height: 800px;
     }
-    .fotoLogo{
+
+    .fotoLogo {
         align-items: center;
         display: flex;
         flex-wrap: wrap;
 
     }
-    .fotoMed{
+
+    .fotoMed {
         align-items: center;
         display: flex;
         flex-wrap: wrap;
@@ -305,45 +392,65 @@ form .error{
     }
 
 
-    .texto-taller p{
+    .texto-taller p {
         font-size: 28px;
     }
 
-    .texto-taller-2 p{
+    .texto-taller-2 p {
         font-size: 20px;
     }
 
 }
- 
 
-@media screen and (max-width: 800px){
- 
 
-    .med{
+@media screen and (max-width: 800px) {
+
+    .imagen_blog {
+        display: none;
+    }
+
+    .grid-container {
+        display: inline-block;
+    }
+
+    .news {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .med {
         height: 300px;
     }
 
-    .texto_med{
+    .texto_med {
 
-        margin-left: 11px;;
+        margin-left: 11px;
+        ;
     }
-    .fotoMed{
-        width: 300px ;
+
+    .fotoMed {
+        width: 300px;
         padding: 0;
     }
 
-    .contenedor-principal .contenedor-principal-logo img{
+    .contenedor-principal .contenedor-principal-logo img {
         height: 300px;
-        width: 300px;;
+        width: 300px;
+        ;
     }
 
-    .contenedor-principal{
+    .contenedor-principal {
         display: inline-flex;
         flex-wrap: wrap;
         width: 100%;
         justify-content: center;
     }
-    .contenedor-principal-logo{
+
+    .contenedor-principal-logo {
         width: 90%;
         justify-content: center;
         align-items: center;
@@ -351,74 +458,74 @@ form .error{
         text-align: center;
         margin: 0;
     }
-    .contenedor-principalTexto{
+
+    .contenedor-principalTexto {
         width: 90%;
         justify-content: center;
     }
 
-    footer .container .footerRedes{
+    footer .container .footerRedes {
         display: none;
     }
-    
 
-    .cabecera{
+
+    .cabecera {
         height: 250px;
     }
-    
-    .formulario{
+
+    .formulario {
         width: 100%;
     }
 
-    .infoPersonal h5{
+    .infoPersonal h5 {
         font-size: 18px;
         width: 100%;
     }
-    .formulario-contacto-imagen{
+
+    .formulario-contacto-imagen {
         display: none;
     }
 
-    .contactoCuadro{
+    .contactoCuadro {
         width: 100%;
     }
 
-    .cont-mensaje{
+    .cont-mensaje {
         width: 100%;
     }
 
-    .imagVid img{
+    .imagVid img {
         width: 1000% !important;
     }
-    
-    .textos{
+
+    .textos {
         width: 90%;
     }
-    
-    .post{
+
+    .post {
         width: 90% !important;
-        background-color:  rgba(139, 140, 122, 0.479);
+        background-color: rgba(139, 140, 122, 0.479);
     }
 
-    .contenedor_general{
-        padding: 25px;;
+    .contenedor_general {
+        padding: 25px;
+        ;
     }
-  
-    .contenedor_general .textos{
+
+    .contenedor_general .textos {
         width: 100% !important;
     }
 
-    .navbar-toggler{
-        background-color: azure !important;
-    }  
-    
-    .texto-taller p{
+
+    .texto-taller p {
         font-size: 20px;
     }
 
-    .texto-taller-2 p{
+    .texto-taller-2 p {
         font-size: 17px;
     }
-    
-    .medari-mes .formulario{
+
+    .medari-mes .formulario {
         width: 90%;
     }
 
